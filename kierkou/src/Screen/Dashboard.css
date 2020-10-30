@@ -113,6 +113,10 @@
     margin-top: 50px;
 }
 
+.section9 {
+    margin-left: -15px;
+}
+
 .mainsection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -173,4 +177,9 @@
 
 .box {
     border-color: #f00031;
+}
+
+.playstore {
+    height: 50px;
+    width: 25px;
 }

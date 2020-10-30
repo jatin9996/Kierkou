@@ -1,0 +1,22 @@
+.Footerbody {
+    background-color: #001a33;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+.section2 {
+    flex-direction: column;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+}

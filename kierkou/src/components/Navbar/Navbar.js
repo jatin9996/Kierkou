@@ -3,7 +3,7 @@ import { Button } from "../Button";
 import {MenuItems} from "./MenuItems"
 import './Navbar.css'
 
-class Navbar extends React.Component {
+ export default class Navbar extends React.Component {
     state={clicked:false}
     handleClick = () => {
         this.setState({clicked: !this.state.clicked})
@@ -34,4 +34,3 @@ class Navbar extends React.Component {
     }
 }
 
-export default Navbar;

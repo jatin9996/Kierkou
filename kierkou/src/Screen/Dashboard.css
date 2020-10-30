@@ -11,6 +11,13 @@
     margin-top: 200px;
 }
 
+.Header3 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 400px;
+    font-weight: 900px;
+}
+
 .para {
     font-size: 15px;
     color: black;
@@ -20,4 +27,150 @@
 .btn1 {
     font-size: 8px;
     background-color: #f00031;
+}
+
+.btn3 {
+    margin-left: 100px;
+}
+
+.forminput {
+    width: 600px;
+    margin-left: 550px;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.search {
+    background: #000;
+    color: black;
+    height: 100px;
+}
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    margin-top: 200px;
+    border: 1px solid #000;
+    width: 250px;
+    height: 250px;
+    padding-top: 80px;
+    padding-left: 30px;
+    box-shadow: lightgreen;
+    border-spacing: 5px;
+}
+
+.section1 {
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    margin-left: 400px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.section2 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.section3 {
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    margin-left: 250px;
+}
+
+.section4 {
+    display: flex;
+}
+
+.section5 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.section6 {
+    margin-left: 150px;
+    margin-top: 50px;
+    background-color: #fd0036;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    color: beige;
+}
+
+.section7 {
+    margin-left: 80px;
+    margin-top: 250px;
+}
+
+.section8 {
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.mainsection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.bottom {
+    font-size: 10px;
+}
+
+.btn3 {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mini1 {
+    margin-top: 250px;
+}
+
+.mini2 {
+    margin-top: 320px;
+}
+
+.mini3 {
+    margin-top: 100px;
+}
+
+.mini4 {
+    margin-top: 150px;
+}
+
+.mini5 {
+    margin-top: 200px;
+    border: 1px solid #000;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.mini6 {
+    margin-top: 300px;
+    margin-left: 30px;
+}
+
+.mini7 {
+    margin-top: 400px;
+    margin-left: 50px;
+}
+
+.mini8 {
+    margin-top: 300px;
+    margin-left: 50px;
+}
+
+.box {
+    border-color: #f00031;
 }

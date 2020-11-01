@@ -1,22 +1,44 @@
 .Footerbody {
     background-color: #001a33;
-    position: relative;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
 }
 
-.section1 {
+.section20 {
     display: flex;
     flex-direction: column;
     font-size: 10px;
+    padding-left: 130px;
+    margin-left: 100px;
+    padding-top: 20px;
 }
 
-.section2 {
-    flex-direction: column;
-}
-
-.section3 {
+.section21 {
     display: flex;
     flex-direction: column;
-    margin-right: 150px;
+    padding-left: 90px;
+    padding-top: 20px;
+}
+
+.section22 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.mini10 {
+    position: relative;
+    color: #fff;
+    display: flex;
+}
+
+.mini11 {}
+
+.minor2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.2fr 0.1fr;
+    padding-top: 90px;
 }

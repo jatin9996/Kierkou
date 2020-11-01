@@ -20,7 +20,7 @@ export default class Dashboard extends Component {
                     and agencies to business seeking <br />
                     specialized telent </p>
 
-                    <Button className="btn1">I Want To Hire</Button>
+                    <Button className="btn1" >I Want To Hire</Button>
                     <Button className="btn2">I want To Get Hired</Button>
 
                 </div>
@@ -39,7 +39,7 @@ export default class Dashboard extends Component {
                     <h1>Find Quality Telents and Agencies</h1>
                 </div>
                 <div className="mainsection">
-                    <div className="section">
+                    <div style={{marginLeft:80}} className="section">
                         <h4> Construction & <br />
                             Engineering</h4>
                         <p className="bottom">Its A Long Established Fact that A Reader <br />   Will Be Distracted by The </p>

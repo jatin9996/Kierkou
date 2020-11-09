@@ -51,6 +51,10 @@
     display: none;
 }
 
+.navbtn {
+    background-color: #001a33;
+}
+
 .menu-Icon {
     display: none;
 }

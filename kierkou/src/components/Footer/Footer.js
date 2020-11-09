@@ -45,7 +45,7 @@ export default class Footer extends React.Component {
 
                 </div>
                 <div className="section22">
-                    <h4 style={{ fontSize: 10 }, { color: "#ff4500" }, { fontWeight: "bold" }}  >Company</h4>
+                    <h4 style={{ fontSize: 10 },  { fontWeight: "bold" }, {color:"#ff4500"}}  >Company</h4>
                     <div style={{ fontSize: 15 }}>
                         <a style={{ color: "#fff" }} href="#">How It Works</a>
                     </div>
@@ -66,7 +66,7 @@ export default class Footer extends React.Component {
                         <a style={{ color: "#fff" }} href="#">Our Current Contries</a>
                     </div>
                     <div className="minor2">
-                    <a   className="mini11" href="#">
+                    <a   className="mini11" href="https://play.google.com/store">
                         <img src={"https://149365103.v2.pressablecdn.com/wp-content/uploads/2020/07/1024px-Google_Play_Store_badge_EN.svg.png"} height="25" width="80" />
                     </a>
                     <a className="mini12" href="#">
@@ -77,7 +77,7 @@ export default class Footer extends React.Component {
 
                 </div>
 
-                <div className="mini10">
+                <div className="mini20">
                     <p style={{ marginLeft: 70 }}>Follow Us:</p>
 
                     <a style={{ color: "#fff" }, { marginLeft: 20 }} href="#">

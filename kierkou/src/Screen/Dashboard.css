@@ -34,16 +34,18 @@
 }
 
 .forminput {
-    width: 600px;
-    margin-left: 550px;
+    width: 650px;
+    margin-left: 420px;
     box-sizing: border-box;
-    height: 50px;
+    border-radius: 0.5;
+    box-shadow: gray;
+    height: 40px;
 }
 
 .search {
     background: #000;
     color: black;
-    height: 100px;
+    height: 150px;
 }
 
 .section {
@@ -96,7 +98,7 @@
 }
 
 .section6 {
-    margin-left: 150px;
+    margin-left: 100px;
     margin-top: 50px;
     background-color: #fd0036;
     width: 150px;

@@ -33,43 +33,45 @@ export default class Dashboard extends Component {
                 <div className="main-dashboard">
 
                 </div>
-                <input className="forminput" type="text" placeholder="What Kind of Work do you need?" aria-label="Search" />
-                <Button className="search">Search</Button>
+                <input className="forminput" type="text" placeholder="What Kind of Work do you need?" aria-label="Search"/> 
+                 <Button className="search">Search</Button>
+                
+                
                 <div className="Header3">
                     <h1>Find Quality Telents and Agencies</h1>
                 </div>
                 <div className="mainsection">
-                    <div style={{marginLeft:80}} className="section">
+                    <div style={{marginLeft:200}} className="section">
                         <h4> Construction & <br />
                             Engineering</h4>
                         <p className="bottom">Its A Long Established Fact that A Reader <br />   Will Be Distracted by The </p>
 
                     </div>
-                    <div className="section">
+                    <div style={{marginLeft:100}} className="section">
                         <h4> Agriculture & <br />
                             Environment</h4>
                         <p className="bottom">Its A Long Established Fact that A Reader <br /> Will Be Distracted by The </p>
 
                     </div>
-                    <div className="section">
+                    <div style={{marginRight:200}} className="section">
                         <h4> Information & <br />
                               Technology</h4>
                         <p className="bottom">Its A Long Established Fact that A Reader <br /> Will Be Distracted by The </p>
 
                     </div>
-                    <div className="section">
+                    <div style={{marginLeft:200}} className="section">
                         <h4> Health & <br />
                              Well Being</h4>
                         <p className="bottom">Its A Long Established Fact that A Reader <br /> Will Be Distracted by The </p>
 
                     </div>
-                    <div className="section">
+                    <div style={{marginLeft:100}} className="section">
                         <h4> Government & <br />
                              Low</h4>
                         <p className="bottom">Its A Long Established Fact that A Reader <br /> Will Be Distracted by The </p>
 
                     </div>
-                    <div className="section">
+                    <div style={{marginRight:200}} className="section">
                         <h4>  Food & <br />
                               Drinks</h4>
                         <p className="bottom">Its A Long Established Fact that A Reader <br /> Will Be Distracted by The </p>
@@ -148,33 +150,33 @@ export default class Dashboard extends Component {
                     <Button>Join Now</Button>
                 </div>
                 <div className="mainsection">
-                    <div className="section">
+                    <div style={{marginLeft:200}} className="section">
                         <h4>Browse Portfolio </h4>
                         <p className="bottom">Find Proffesional You Can Trust By <br /> Browsing Their Samples Of <br />   Previous Work And Reading Their<br /> Profile Reviews.</p>
 
                     </div>
-                    <div className="section">
+                    <div style={{marginLeft:100}} className="section">
                         <h4>View Bids</h4>
                         <p className="bottom">Recieve Free Bids From Our <br /> Telanted Freelancers Within Seconds. </p>
 
                     </div>
-                    <div className="section">
+                    <div style={{marginRight:200}} className="section">
                         <h4> Live Chat
                             </h4>
                         <p className="bottom">You Can Live Chat With Your <br /> Freelancers To Get Constant Update On <br />  The Progress Of Your Work.</p>
 
                     </div>
-                    <div className="section">
-                        <h4> Pay When You Are Satisfied</h4>
+                    <div style={{marginLeft:200}} className="section">
+                        <h4 style={{fontSize:10}, {fontWeight:100}}> Pay When You Are Satisfied</h4>
                         <p className="bottom">Pay For Work When It Has Been <br /> Completed And You Are 100% Satified.  </p>
 
                     </div>
-                    <div className="section">
+                    <div style={{marginLeft:100}} className="section">
                         <h4> Track Your Anywhere</h4>
                         <p className="bottom">Keep Up-To-Date And On-The-Go with <br /> Our Time Tracker, And Mobile App. </p>
 
                     </div>
-                    <div className="section">
+                    <div style={{marginRight:200}} className="section">
                         <h4>24H Support</h4>
                         <p className="bottom">We Are Always Here To Help.<br /> Our Support Consists Of Real <br /> People Who Are Available 24/7. </p>
 

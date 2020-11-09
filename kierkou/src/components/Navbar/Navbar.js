@@ -11,7 +11,7 @@ import './Navbar.css'
     render(){
         return(
             <nav className="NavbarItems">
-                <h1 className="Navbar-logo">Logo<i className="fab fa-react"></i> </h1>
+                <h1 className="Navbar-logo">Logo<img src={"./"}/> </h1>
                 <div className="menu-Icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
 

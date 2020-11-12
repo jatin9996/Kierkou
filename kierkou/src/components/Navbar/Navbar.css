@@ -15,6 +15,10 @@
     cursor: pointer;
 }
 
+.logo {
+    margin-left: 80px;
+}
+
 .fa-react {
     margin-left: 0.5rem;
     font-size: 1.6rem;
@@ -29,6 +33,7 @@
     width: 70vw;
     justify-content: end;
     margin-right: 2rem;
+    margin-top: 25px;
 }
 
 .Nav-links {
@@ -53,10 +58,16 @@
 
 .navbtn {
     background-color: #001a33;
+    height: 40px;
 }
 
 .menu-Icon {
     display: none;
+}
+
+.post {
+    color: #fff;
+    text-align: center;
 }
 
 @media screen and (max-width: 960px) {

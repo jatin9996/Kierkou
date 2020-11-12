@@ -11,7 +11,7 @@ export default class Navbar extends React.Component {
     render() {
         return (
             <nav className="NavbarItems">
-                <h1 className="Navbar-logo">Logo<img src={"./"} /> </h1>
+                <h1 className="Navbar-logo"><img className="logo" src={"https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo3.jpg"} height="40" /> </h1>
                 <div className="menu-Icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
 
@@ -27,8 +27,9 @@ export default class Navbar extends React.Component {
                         )
                     })}
                 </ul>
-                <div className="navbtn">
-                    <Button>Post A Job</Button>
+                <div className="navbtn" style={{color:"#fff"}}>
+                    
+                    <Button> <label className="post">Post A Job </label></Button>
                 </div>
 
             </nav>

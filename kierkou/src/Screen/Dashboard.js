@@ -4,8 +4,8 @@ import { Button } from '../components/Button';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import './Dashboard.css';
-import Avatar from '@material-ui/core/Avatar'
-
+import Avatar from '@material-ui/core/Avatar';
+import Box from '@material-ui/core/Box';
 
 
 export default class Dashboard extends Component {
@@ -39,7 +39,12 @@ export default class Dashboard extends Component {
                 <div className="main-dashboard">
 
                 </div>
+                  
+                <div className="flap"></div>
+
                 <div className="searchbar">
+                    <div className="flap"></div>  
+
                     <div>
                         <input className="forminput" type="text" placeholder="What Kind of Work do you need?" aria-label="Search" />
                     </div>
@@ -50,6 +55,9 @@ export default class Dashboard extends Component {
                             <label className="searchlab">Search</label></Button>
                     </div>
                 </div>
+                <div>
+                    <img className="users" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ5MC42NjcgNDkwLjY2NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGNpcmNsZSByPSIyNDUuMzMzNSIgY3g9IjI0NS4zMzM1IiBjeT0iMjQ1LjMzMzUiIGZpbGw9IiNmZmJlYmUiIHNoYXBlPSJjaXJjbGUiPjwvY2lyY2xlPjxnIHRyYW5zZm9ybT0ibWF0cml4KDAuNywwLDAsMC43LDczLjYwMDA0ODgyODEyNTAxLDczLjYwMDA1MTExNjk0MzM4KSI+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8Y2lyY2xlIGN4PSIyNDUuMzMzIiBjeT0iMTYwIiByPSI3NC42NjciIGZpbGw9IiNlNDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvY2lyY2xlPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8Y2lyY2xlIGN4PSIzOTQuNjY3IiBjeT0iMjI0IiByPSI1My4zMzMiIGZpbGw9IiNlNDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvY2lyY2xlPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8Y2lyY2xlIGN4PSI5Ny41MTUiIGN5PSIyMjQiIHI9IjUzLjMzMyIgZmlsbD0iI2U0MDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9jaXJjbGU+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxwYXRoIGQ9Ik0yNDUuMzMzLDI1NmMtNzYuNDU5LDAtMTM4LjY2Nyw2Mi4yMDgtMTM4LjY2NywxMzguNjY3YzAsNS44ODgsNC43NzksMTAuNjY3LDEwLjY2NywxMC42NjdoMjU2ICAgIGM1Ljg4OCwwLDEwLjY2Ny00Ljc3OSwxMC42NjctMTAuNjY3QzM4NCwzMTguMjA4LDMyMS43OTIsMjU2LDI0NS4zMzMsMjU2eiIgZmlsbD0iI2U0MDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMTE1LjkwNCwzMDAuOTcxYy02LjUyOC0xLjM4Ny0xMy4xNjMtMi4zMDQtMTkuOTA0LTIuMzA0Yy01Mi45MjgsMC05Niw0My4wNzItOTYsOTZjMCw1Ljg4OCw0Ljc3OSwxMC42NjcsMTAuNjY3LDEwLjY2NyAgICBoNzYuNjI5Yy0xLjE5NS0zLjM0OS0xLjk2My02LjkxMi0xLjk2My0xMC42NjdDODUuMzMzLDM1OS42NTksOTYuNzY4LDMyNy4zMzksMTE1LjkwNCwzMDAuOTcxeiIgZmlsbD0iI2U0MDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMzk0LjY2NywyOTguNjY3Yy02Ljc0MSwwLTEzLjM3NiwwLjkxNy0xOS45MDQsMi4zMDRjMTkuMTM2LDI2LjM2OCwzMC41NzEsNTguNjg4LDMwLjU3MSw5My42OTYgICAgYzAsMy43NTUtMC43NjgsNy4zMTctMS45NjMsMTAuNjY3SDQ4MGM1Ljg4OCwwLDEwLjY2Ny00Ljc3OSwxMC42NjctMTAuNjY3QzQ5MC42NjcsMzQxLjczOSw0NDcuNTk1LDI5OC42NjcsMzk0LjY2NywyOTguNjY3eiIgZmlsbD0iI2U0MDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" />
+                </div>
 
 
                 <div className="Header3">
@@ -58,7 +66,7 @@ export default class Dashboard extends Component {
                 <div className="mainsection">
                     <div style={{ marginLeft: 200 }} className="section">
                         <div>
-                            <img className="engi" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDgwIDQ4MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDgwIDQ4MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00MDAsMjQwYzQuNDE4LDAsOC0zLjU4Miw4LThWMTIwaDY0YzQuNDE4LDAsOC0zLjU4Miw4LThWODBjLTAuMDQxLTAuMjk3LTAuMS0wLjU5LTAuMTc2LTAuODgNCgkJCWMtMC4wNTEtMC41NzktMC4xNjYtMS4xNTEtMC4zNDQtMS43MDRjLTAuMTQ4LTAuNDA3LTAuMzMtMC44LTAuNTQ0LTEuMTc2Yy0wLjcyMS0xLjM2NC0xLjgzNi0yLjQ3OS0zLjItMy4yDQoJCQljLTAuNDAxLTAuMjI0LTAuODIxLTAuNDExLTEuMjU2LTAuNTZjLTAuMjMyLTAuMDgtMC40MTYtMC4yMzItMC42NTYtMC4yODhsLTMwNC03MkMxNjkuMjI2LDAuMDU4LDE2OC42MTQtMC4wMDYsMTY4LDBoLTMyDQoJCQljLTAuOTQ2LDAuMDIxLTEuODgxLDAuMjEtMi43NiwwLjU2Yy0wLjIxNiwwLjA4LTAuNDE2LDAuMTUyLTAuNjI0LDAuMjQ4cy0wLjM2OCwwLjEyLTAuNTQ0LDAuMjE2bC0xMjgsNzINCgkJCWMtMC4zOTUsMC4yNjQtMC43NjQsMC41NjQtMS4xMDQsMC44OTZjLTAuMjYzLDAuMTg3LTAuNTE0LDAuMzktMC43NTIsMC42MDhjLTAuNjcsMC42ODItMS4yMTEsMS40NzktMS42LDIuMzUydjAuMDk2DQoJCQljLTAuMzQ5LDAuODc5LTAuNTM5LDEuODE0LTAuNTYsMi43NkMwLjA1Niw3OS44MzMsMCw3OS45MTIsMCw4MC4wMDh2MzJjMCw0LjQxOCwzLjU4Miw4LDgsOGgxMTJ2MTQ4LjY4bC0yOS42NTYsMjkuNjU2DQoJCQljLTEuNSwxLjUtMi4zNDQsMy41MzQtMi4zNDQsNS42NTZ2MTI4SDcydjQ4aDE2MHYtNDhoLTE2VjMwNGMwLTIuMTIyLTAuODQ0LTQuMTU2LTIuMzQ0LTUuNjU2TDE4NCwyNjguNjg4VjEyMGgxNjB2MTEyDQoJCQljMCw0LjQxOCwzLjU4Miw4LDgsOGgxNnYyNGMwLDQuNDE4LDMuNTgyLDgsOCw4YzguODM3LDAsMTYsNy4xNjMsMTYsMTZzLTcuMTYzLDE2LTE2LDE2cy0xNi03LjE2My0xNi0xNnYtOGgtMTZ2OA0KCQkJYzAuMDQxLDExLjY3OSw2LjQ2MSwyMi40MDEsMTYuNzM2LDI3Ljk1MkwzMDAuNjg4LDM3NkgyODBjLTQuNDE4LDAtOCwzLjU4Mi04LDh2NzJjMCw0LjQxOCwzLjU4Miw4LDgsOGgxOTJjNC40MTgsMCw4LTMuNTgyLDgtOA0KCQkJdi03MmMwLTQuNDE4LTMuNTgyLTgtOC04aC0yMC42ODhsLTYwLjA0OC02MC4wNDhjMTUuNDk1LTguMzUyLDIxLjI4NS0yNy42ODMsMTIuOTM0LTQzLjE3OA0KCQkJYy00LjIzMS03Ljg0OS0xMS41NTYtMTMuNTY3LTIwLjE5OC0xNS43NjZWMjQwSDQwMHogTTQwOCw4OGg1NnYxNmgtNTZWODh6IE00NjQsMzkydjU2SDI4OHYtNTZINDY0eiBNNDI4LjY4OCwzNzZIMzIzLjMxMg0KCQkJTDM3NiwzMjMuMzEzTDQyOC42ODgsMzc2eiBNMzkyLDE5MmgtMzJ2LTcyaDMyVjE5MnogTTM5MiwxMDRoLTMyVjg4aDMyVjEwNHogTTE0NCwxNmgxNnY1NmgtMTZWMTZ6IE0xMzYsODhoMzJ2MTIuNjg4DQoJCQlMMTY0LjY4OCwxMDRIMTM2Vjg4eiBNMTY4LDEyMy4zMTJ2NTcuMzc2TDEzOS4zMTIsMTUyTDE2OCwxMjMuMzEyeiBNMTM2LDEyMGgxMi42ODhMMTM2LDEzMi42ODhWMTIweiBNMTM2LDE3MS4zMTNMMTY0LjY4OCwyMDANCgkJCUwxMzYsMjI4LjY4OFYxNzEuMzEzeiBNMTY4LDIxOS4zMTNWMjcydjQuNjg4TDEzOS4zMTIsMjQ4TDE2OCwyMTkuMzEzeiBNMTM2LDI3MnYtNC42ODhMMTY0LjY4OCwyOTZMMTM2LDMyNC42ODhWMjcyeg0KCQkJIE0xNjgsMzE1LjMxM3Y1Ny4zNzZMMTM5LjMxMiwzNDRMMTY4LDMxNS4zMTN6IE0xMzYsMzYzLjMxM0wxNjQuNjg4LDM5MkwxMzYsNDIwLjY4OFYzNjMuMzEzeiBNMTY4LDQxMS4zMTNWNDMyaC0yMC42ODgNCgkJCUwxNjgsNDExLjMxM3ogTTEyOCwyMS42OFY3MkgzOC41MzZMMTI4LDIxLjY4eiBNMTYsMTA0Vjg4aDEwNHYxNkgxNnogTTEwNCwzMDcuMzEzbDE2LTE2VjQzMmgtMTZWMzA3LjMxM3ogTTIxNiw0NDh2MTZIODh2LTE2DQoJCQlIMjE2eiBNMjAwLDMwNy4zMTNWNDMyaC0xNlYyOTEuMzEzTDIwMCwzMDcuMzEzeiBNMzQ0LDEwNEgxODRWODhoMTYwVjEwNHogTTE3Niw3MlYxOC4xMTJMNDAzLjUxMiw3Mkg0MDBIMTc2eiBNMzYwLDIyNHYtMTZoMzINCgkJCXYxNkgzNjB6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+                            <img className="engi" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ4MCA0ODAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxjaXJjbGUgcj0iMjQwIiBjeD0iMjQwIiBjeT0iMjQwIiBmaWxsPSIjZmZiZWJlIiBzaGFwZT0iY2lyY2xlIj48L2NpcmNsZT48ZyB0cmFuc2Zvcm09Im1hdHJpeCgwLjcsMCwwLDAuNyw3Miw3MS45OTk5NDM3ODk4Mzk3NikiPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQwMCwyNDBjNC40MTgsMCw4LTMuNTgyLDgtOFYxMjBoNjRjNC40MTgsMCw4LTMuNTgyLDgtOFY4MGMtMC4wNDEtMC4yOTctMC4xLTAuNTktMC4xNzYtMC44OCAgICBjLTAuMDUxLTAuNTc5LTAuMTY2LTEuMTUxLTAuMzQ0LTEuNzA0Yy0wLjE0OC0wLjQwNy0wLjMzLTAuOC0wLjU0NC0xLjE3NmMtMC43MjEtMS4zNjQtMS44MzYtMi40NzktMy4yLTMuMiAgICBjLTAuNDAxLTAuMjI0LTAuODIxLTAuNDExLTEuMjU2LTAuNTZjLTAuMjMyLTAuMDgtMC40MTYtMC4yMzItMC42NTYtMC4yODhsLTMwNC03MkMxNjkuMjI2LDAuMDU4LDE2OC42MTQtMC4wMDYsMTY4LDBoLTMyICAgIGMtMC45NDYsMC4wMjEtMS44ODEsMC4yMS0yLjc2LDAuNTZjLTAuMjE2LDAuMDgtMC40MTYsMC4xNTItMC42MjQsMC4yNDhzLTAuMzY4LDAuMTItMC41NDQsMC4yMTZsLTEyOCw3MiAgICBjLTAuMzk1LDAuMjY0LTAuNzY0LDAuNTY0LTEuMTA0LDAuODk2Yy0wLjI2MywwLjE4Ny0wLjUxNCwwLjM5LTAuNzUyLDAuNjA4Yy0wLjY3LDAuNjgyLTEuMjExLDEuNDc5LTEuNiwyLjM1MnYwLjA5NiAgICBjLTAuMzQ5LDAuODc5LTAuNTM5LDEuODE0LTAuNTYsMi43NkMwLjA1Niw3OS44MzMsMCw3OS45MTIsMCw4MC4wMDh2MzJjMCw0LjQxOCwzLjU4Miw4LDgsOGgxMTJ2MTQ4LjY4bC0yOS42NTYsMjkuNjU2ICAgIGMtMS41LDEuNS0yLjM0NCwzLjUzNC0yLjM0NCw1LjY1NnYxMjhINzJ2NDhoMTYwdi00OGgtMTZWMzA0YzAtMi4xMjItMC44NDQtNC4xNTYtMi4zNDQtNS42NTZMMTg0LDI2OC42ODhWMTIwaDE2MHYxMTIgICAgYzAsNC40MTgsMy41ODIsOCw4LDhoMTZ2MjRjMCw0LjQxOCwzLjU4Miw4LDgsOGM4LjgzNywwLDE2LDcuMTYzLDE2LDE2cy03LjE2MywxNi0xNiwxNnMtMTYtNy4xNjMtMTYtMTZ2LThoLTE2djggICAgYzAuMDQxLDExLjY3OSw2LjQ2MSwyMi40MDEsMTYuNzM2LDI3Ljk1MkwzMDAuNjg4LDM3NkgyODBjLTQuNDE4LDAtOCwzLjU4Mi04LDh2NzJjMCw0LjQxOCwzLjU4Miw4LDgsOGgxOTJjNC40MTgsMCw4LTMuNTgyLDgtOCAgICB2LTcyYzAtNC40MTgtMy41ODItOC04LThoLTIwLjY4OGwtNjAuMDQ4LTYwLjA0OGMxNS40OTUtOC4zNTIsMjEuMjg1LTI3LjY4MywxMi45MzQtNDMuMTc4ICAgIGMtNC4yMzEtNy44NDktMTEuNTU2LTEzLjU2Ny0yMC4xOTgtMTUuNzY2VjI0MEg0MDB6IE00MDgsODhoNTZ2MTZoLTU2Vjg4eiBNNDY0LDM5MnY1NkgyODh2LTU2SDQ2NHogTTQyOC42ODgsMzc2SDMyMy4zMTIgICAgTDM3NiwzMjMuMzEzTDQyOC42ODgsMzc2eiBNMzkyLDE5MmgtMzJ2LTcyaDMyVjE5MnogTTM5MiwxMDRoLTMyVjg4aDMyVjEwNHogTTE0NCwxNmgxNnY1NmgtMTZWMTZ6IE0xMzYsODhoMzJ2MTIuNjg4ICAgIEwxNjQuNjg4LDEwNEgxMzZWODh6IE0xNjgsMTIzLjMxMnY1Ny4zNzZMMTM5LjMxMiwxNTJMMTY4LDEyMy4zMTJ6IE0xMzYsMTIwaDEyLjY4OEwxMzYsMTMyLjY4OFYxMjB6IE0xMzYsMTcxLjMxM0wxNjQuNjg4LDIwMCAgICBMMTM2LDIyOC42ODhWMTcxLjMxM3ogTTE2OCwyMTkuMzEzVjI3MnY0LjY4OEwxMzkuMzEyLDI0OEwxNjgsMjE5LjMxM3ogTTEzNiwyNzJ2LTQuNjg4TDE2NC42ODgsMjk2TDEzNiwzMjQuNjg4VjI3MnogICAgIE0xNjgsMzE1LjMxM3Y1Ny4zNzZMMTM5LjMxMiwzNDRMMTY4LDMxNS4zMTN6IE0xMzYsMzYzLjMxM0wxNjQuNjg4LDM5MkwxMzYsNDIwLjY4OFYzNjMuMzEzeiBNMTY4LDQxMS4zMTNWNDMyaC0yMC42ODggICAgTDE2OCw0MTEuMzEzeiBNMTI4LDIxLjY4VjcySDM4LjUzNkwxMjgsMjEuNjh6IE0xNiwxMDRWODhoMTA0djE2SDE2eiBNMTA0LDMwNy4zMTNsMTYtMTZWNDMyaC0xNlYzMDcuMzEzeiBNMjE2LDQ0OHYxNkg4OHYtMTYgICAgSDIxNnogTTIwMCwzMDcuMzEzVjQzMmgtMTZWMjkxLjMxM0wyMDAsMzA3LjMxM3ogTTM0NCwxMDRIMTg0Vjg4aDE2MFYxMDR6IE0xNzYsNzJWMTguMTEyTDQwMy41MTIsNzJINDAwSDE3NnogTTM2MCwyMjR2LTE2aDMyICAgIHYxNkgzNjB6IiBmaWxsPSIjZjMwNDA0IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" />
                         </div>
                         <h4> Construction & <br />
                             Engineering</h4>
@@ -151,9 +159,10 @@ export default class Dashboard extends Component {
                     </div>
                 </div>
                 <div className="section4" >
-                    <div className="mini5">
-                        <h2 className="box"> Hire For Any Scope</h2>
+                    <div className="flap">
+
                     </div>
+                    <h2 className="box"> Hire For Any Scope</h2>
                     <div className="mini6">
                         <h4 style={{ fontWeight: "bold" }, { color: "#f00031" }}>Complex Project</h4>
                         <p style={{ fontSize: 15 }}>Find specialized expert And Agencies <br /> for Large Projects  </p>
@@ -253,13 +262,16 @@ export default class Dashboard extends Component {
 
                     </div>
                 </div>
-                
+                <div>
+                    <skeleton></skeleton>
+                </div>
+
                 <div>
                     <img className="mobilescreen" src={"https://mockuphone.com/static/images/devices/apple-iphone7-silver-portrait.png"} />
-                
+
                 </div>
                 <div className="avatar">
-                <Avatar className="broken" src="/broken-image.jpg" />
+                    <Avatar className="broken" src="/broken-image.jpg" />
                 </div>
                 <div className="section7">
                     <div>
@@ -267,7 +279,7 @@ export default class Dashboard extends Component {
                         <p style={{ fontWeight: "bold" }, { fontSize: 15 }}>Trackle Your To-Do List Whatever You Are With <br /> Our Mobile App.</p>
                     </div>
                 </div>
-                
+
                 <div className="section8">
                     <div>
                         <h4 style={{ fontSize: 10 }, { fontWeight: "bolder" }, { color: "#f00031" }}>Get The App</h4>
@@ -287,13 +299,14 @@ export default class Dashboard extends Component {
                 </div>
                 <div className="person">
                     <p> -Person name<br />
-                        UI/UX designer</p>
+                            UI/UX designer</p>
+                </div>
+                <div>
+                    <Box component="span" sx={{ p: 2, border: '1px dashed grey' }}></Box>
                 </div>
 
                 <Footer />
             </div >
-
-
 
         );
     }

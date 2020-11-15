@@ -2,17 +2,17 @@ export const MenuItems = [
     {
         title: 'How It Works',
         url: '#',
-        cName: 'Nav-links'
+        cName: 'Nav-links1'
     },
     {
         title: 'Browse Jobs',
         url: '#',
-        cName: 'Nav-links'
+        cName: 'Nav-links2'
     },
     {
         title: 'Find A Freelancer',
         url: '#',
-        cName: 'Nav-links'
+        cName: 'Nav-links3'
     },
     {
         title: 'Log In',

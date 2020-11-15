@@ -19,6 +19,15 @@
         margin-left: 10px;
     }
     
+    .graphic1 {
+        height: 50px;
+        margin-left: 750px;
+    }
+    
+    .graph2 {
+        margin-top: 100px;
+    }
+    
     .mainbtn {
         color: #fff;
         display: flex;
@@ -79,7 +88,8 @@
         height: 250px;
         padding-top: 80px;
         padding-left: 10px;
-        box-shadow: 5px 5px 5px gray;
+        box-shadow: 0px 0px 12px gray;
+        z-index: 100;
         border-spacing: 5px;
     }
     
@@ -237,7 +247,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: -270px;
+        margin-top: -230px;
         border-top-left-radius: 35px;
         border-bottom-left-radius: 35px;
         margin-left: 85%;
@@ -329,7 +339,7 @@
     }
     
     .agri {
-        height: 20px;
+        height: 30px;
         width: 20px;
         margin-left: -80px;
         margin-bottom: 30px;
@@ -474,6 +484,11 @@
     
     .users {
         height: 70px;
-        margin-left: 300px;
-        margin-top: 80px;
+        margin-left: 325px;
+        margin-top: 225px;
+    }
+    
+    .project {
+        display: flex;
+        flex-direction: row;
     }
